@@ -2,9 +2,11 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
+/[Ll]ibrary/*
+*/Library/*
+*/Logs/*
+/[Tt]emp/*
+*/obj/*
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
