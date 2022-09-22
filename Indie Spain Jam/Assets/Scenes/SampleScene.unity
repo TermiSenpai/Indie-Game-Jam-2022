@@ -1122,9 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chatarra
-
-    0'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
   m_sharedMaterial: {fileID: -4390046280443046495, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
