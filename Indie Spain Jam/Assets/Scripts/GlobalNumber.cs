@@ -22,6 +22,7 @@ public class GlobalNumber : MonoBehaviour
     [Header("References")]
     public UpgradeFood upgrade;
     [SerializeField] private Timer gameplayTimer;
+    [SerializeField] private SpaceShipAnimController animController;
 
 
     private void Start()
@@ -49,6 +50,7 @@ public class GlobalNumber : MonoBehaviour
             internalScrap -= upgradeCost;
             upgradeCost += upgradeCost * upgradePercentaje;
             UpdateUI();
+            animController.updateAnim(upgrade.quantityUpgrade);
         }
     }
 }

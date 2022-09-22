@@ -992,7 +992,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1861,6 +1861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497308169}
   - component: {fileID: 1497308170}
+  - component: {fileID: 1497308171}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -1935,6 +1936,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1497308171
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497308168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 248777125eb826847bc555db4fff64ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1720042747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,6 +1993,7 @@ MonoBehaviour:
   upgradePercentaje: 0.4
   upgrade: {fileID: 1720042750}
   gameplayTimer: {fileID: 754134024}
+  animController: {fileID: 0}
 --- !u!4 &1720042749
 Transform:
   m_ObjectHideFlags: 0
