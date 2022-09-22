@@ -6,19 +6,15 @@ using UnityEngine.Video;
 
 public class VideoPlayer : MonoBehaviour
 {
-    public VideoPlayer joyBoy;
+    public GameObject joyBoy;
+    public GameObject rawImage;
+    public GameObject panel;
     
-    void Awake()
-    {
-        joyBoy = GetComponent<VideoPlayer>();
-        
-        
-    }
-
     public void PlayIntro()
     {
-        
-        
+        rawImage.SetActive(true);
+        joyBoy.SetActive(true);
+        panel.SetActive(false);
     }
 
 }
