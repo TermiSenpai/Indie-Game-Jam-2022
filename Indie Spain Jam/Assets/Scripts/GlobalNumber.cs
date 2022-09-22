@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class GlobalNumber : MonoBehaviour
 {
@@ -46,5 +47,8 @@ public class GlobalNumber : MonoBehaviour
 
         }
     }
-
+    public void ApagarConsola(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName); 
+    }
 }
