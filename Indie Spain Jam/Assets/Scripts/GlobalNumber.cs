@@ -9,14 +9,20 @@ using UnityEngine.SceneManagement;
 public class GlobalNumber : MonoBehaviour
 {
 
-    
+    [Header("Txt variables")]
     public TextMeshProUGUI scrapDisplay;
+    public TextMeshProUGUI costText;
+
+    [Header("Float variables")]
     public float internalScrap;
     public float upgradeCost;
-    public UpgradeFood upgrade;
-    public TextMeshProUGUI costText;
     [Range(0f, 1f)]
     public float upgradePercentaje;
+
+    [Header("References")]
+    public UpgradeFood upgrade;
+    [SerializeField] private Timer gameplayTimer;
+    [SerializeField] private SpaceShipAnimController animController;
 
 
     private void Start()
@@ -25,7 +31,8 @@ public class GlobalNumber : MonoBehaviour
     }
     public void Contador()
     {
-        internalScrap +=1;
+        if (gameplayTimer.canGetScrap)
+            internalScrap += 1;
         UpdateUI();
     }
 
@@ -39,12 +46,11 @@ public class GlobalNumber : MonoBehaviour
     {
         if (internalScrap >= upgradeCost)
         {
-            
             upgrade.quantityUpgrade++;
             internalScrap -= upgradeCost;
             upgradeCost += upgradeCost * upgradePercentaje;
             UpdateUI();
-
+            animController.updateAnim(upgrade.quantityUpgrade);
         }
     }
 }

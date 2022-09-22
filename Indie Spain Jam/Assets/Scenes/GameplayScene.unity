@@ -379,6 +379,7 @@ Transform:
   m_Children:
   - {fileID: 1497308169}
   - {fileID: 692198505}
+  - {fileID: 754134023}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -466,7 +467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460681447}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneCiontrol, Assembly-CSharp
         m_MethodName: ApagarConsola
         m_Mode: 5
@@ -627,7 +628,6 @@ GameObject:
   - component: {fileID: 460681446}
   - component: {fileID: 460681445}
   - component: {fileID: 460681444}
-  - component: {fileID: 460681447}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -684,18 +684,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &460681447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460681443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7996ccbdc9aba8d48a319b883f12d19b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &478110062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,11 +988,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 99ce641046bdf9a43995a67ef972e02e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a9977731207166449817759c3219dc1c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1086,6 +1074,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &754134022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754134023}
+  - component: {fileID: 754134024}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754134023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754134022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 139397185}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754134024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754134022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e76aaa688bcfdb42b6f45e1d8595d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicTimer: 191
 --- !u!1 &939312101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,6 +1861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497308169}
   - component: {fileID: 1497308170}
+  - component: {fileID: 1497308171}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -1902,6 +1936,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1497308171
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497308168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 248777125eb826847bc555db4fff64ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1720042747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,11 +1987,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrapDisplay: {fileID: 1374396663}
+  costText: {fileID: 136743250}
   internalScrap: 0
   upgradeCost: 50
-  upgrade: {fileID: 1720042750}
-  costText: {fileID: 136743250}
   upgradePercentaje: 0.4
+  upgrade: {fileID: 1720042750}
+  gameplayTimer: {fileID: 754134024}
+  animController: {fileID: 0}
 --- !u!4 &1720042749
 Transform:
   m_ObjectHideFlags: 0
@@ -2223,7 +2279,7 @@ GameObject:
   - component: {fileID: 1981139400}
   - component: {fileID: 1981139399}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ButtonsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

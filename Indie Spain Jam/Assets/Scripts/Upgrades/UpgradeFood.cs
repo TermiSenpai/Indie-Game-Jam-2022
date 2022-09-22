@@ -6,7 +6,7 @@ public class UpgradeFood : MonoBehaviour
 {
     public float waitTime;
     public float valuePerUpgrade;
-    public float quantityUpgrade;
+    public int quantityUpgrade;
     public GlobalNumber UI;
   
     void Start()
