@@ -9,6 +9,7 @@ public class VideoController : MonoBehaviour
     [SerializeField] private VideoPlayer video;
     [SerializeField] private GameObject VideoObj;
     [SerializeField] private GameObject blackScreen;
+    [SerializeField] private GameObject logo;
     [SerializeField] private float time;
 
     [SerializeField] private SceneControl sceneControl;
@@ -17,6 +18,7 @@ public class VideoController : MonoBehaviour
 
     public void videoStart()
     {
+        logo.SetActive(true);
         Invoke("blackScreenOff", time);
         Invoke("FinishVideo", 6);
         Invoke("changeScene", timeToChangeScene);
