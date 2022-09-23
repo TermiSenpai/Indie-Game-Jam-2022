@@ -23,6 +23,7 @@ public class GlobalNumber : MonoBehaviour
     public UpgradeFood upgrade;
     [SerializeField] private Timer gameplayTimer;
     [SerializeField] private SpaceShipAnimController animController;
+    [SerializeField] private ButtonAudioController buttonB;
 
 
     private void Start()
@@ -46,6 +47,7 @@ public class GlobalNumber : MonoBehaviour
     {
         if (internalScrap >= upgradeCost)
         {
+            buttonB.playSound();
             upgrade.quantityUpgrade++;
             internalScrap -= upgradeCost;
             upgradeCost += upgradeCost * upgradePercentaje;
