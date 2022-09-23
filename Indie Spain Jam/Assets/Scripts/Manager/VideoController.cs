@@ -11,11 +11,15 @@ public class VideoController : MonoBehaviour
     [SerializeField] private GameObject blackScreen;
     [SerializeField] private float time;
 
+    [SerializeField] private SceneCiontrol sceneControl;
+    [SerializeField] private float timeToChangeScene;
+
 
     public void videoStart()
     {
         Invoke("blackScreenOff", time);
         Invoke("FinishVideo", 6);
+        Invoke("changeScene", timeToChangeScene);
         video.Play();
     }
 
@@ -27,6 +31,11 @@ public class VideoController : MonoBehaviour
     private void FinishVideo()
     {
         VideoObj.SetActive(false);
+    }
+
+    private void changeScene()
+    {
+        sceneControl.StartPlaying("GameplayScene");
     }
 
 
