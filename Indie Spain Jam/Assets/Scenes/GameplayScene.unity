@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 25267408}
   - component: {fileID: 25267409}
+  - component: {fileID: 25267410}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: VolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,13 +208,41 @@ MonoBehaviour:
   m_FillRect: {fileID: 618768484}
   m_HandleRect: {fileID: 2014093812}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 25267410}
+        m_TargetAssemblyTypeName: VolumeSliderManager, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &25267410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25267407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1340ffe99775d9b4fbea1634081b3359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
+  slider: {fileID: 25267409}
+  mixer: {fileID: 24100000, guid: b2be3e349c2be8241a28e78ec20e7cb6, type: 2}
+  volumeName: Volume
 --- !u!1 &136743249
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +1016,7 @@ AudioSource:
   m_GameObject: {fileID: 692198504}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: b2be3e349c2be8241a28e78ec20e7cb6, type: 2}
   m_audioClip: {fileID: 8300000, guid: a9977731207166449817759c3219dc1c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
