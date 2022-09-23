@@ -11,7 +11,7 @@ public class VideoController : MonoBehaviour
     [SerializeField] private GameObject blackScreen;
     [SerializeField] private float time;
 
-    [SerializeField] private SceneCiontrol sceneControl;
+    [SerializeField] private SceneControl sceneControl;
     [SerializeField] private float timeToChangeScene;
 
 
