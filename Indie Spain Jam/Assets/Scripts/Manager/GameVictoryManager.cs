@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using UnityEditor;
 using UnityEngine;
 
 public class GameVictoryManager : MonoBehaviour
@@ -12,6 +14,11 @@ public class GameVictoryManager : MonoBehaviour
     [SerializeField] private UpgradeFood upgradeController;
     [SerializeField] private GlobalNumber ScrapController;
 
+    [Header("Endings")]
+    [SerializeField] private GameObject badEnding;
+    [SerializeField] private GameObject goodEnding;
+    [SerializeField] private GameObject specialEnding;
+
     private int i;
 
     // Update is called once per frame
@@ -21,25 +28,30 @@ public class GameVictoryManager : MonoBehaviour
         {
             switch (upgradeController.quantityUpgrade)
             {
-                case <= 8:
+                case <= 7:
+                    badEnding.SetActive(true);
                     debug("lose");
                     break;
-                case 9:
+                case 8:
+                    goodEnding.SetActive(true);
                     debug("win");
                     break;
-                case >= 10:
+                case >= 9:
+                    specialEnding.SetActive(true);
                     debug("animal");
                     break;
                 default:
                     throw new NotImplementedException();
 
             }
+            ScrapController.costText.gameObject.SetActive(false);
+            ScrapController.scrapDisplay.gameObject.SetActive(false);
         }
     }
 
-    private void debug(string obj)
+    private void debug(string txt)
     {
         i++;
-        Debug.Log(obj);
+        Debug.Log(txt);
     }
 }
