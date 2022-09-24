@@ -8,6 +8,8 @@ public class UpgradeFood : MonoBehaviour
     public float valuePerUpgrade;
     public int quantityUpgrade;
     public GlobalNumber UI;
+
+    
   
     void Start()
     {

@@ -18,12 +18,14 @@ public class GlobalNumber : MonoBehaviour
     public float upgradeCost;
     [Range(0f, 1f)]
     public float upgradePercentaje;
+    public int fase = 1;
 
     [Header("References")]
     public UpgradeFood upgrade;
     [SerializeField] private Timer gameplayTimer;
     [SerializeField] private SpaceShipAnimController animController;
     [SerializeField] private ButtonAudioController buttonB;
+    [SerializeField] private Button buttonBObj;
 
 
     private void Start()
@@ -54,5 +56,26 @@ public class GlobalNumber : MonoBehaviour
             UpdateUI();
             animController.updateAnim(upgrade.quantityUpgrade);
         }
+
+        switch (upgrade.quantityUpgrade)
+        {
+            case 4:
+                fase = 2;
+                upgrade.valuePerUpgrade = fase;
+                break;
+            case 8:
+                fase = 3;
+                upgrade.valuePerUpgrade = fase;
+                costText.gameObject.SetActive(false); 
+                break;
+            case 9:
+                fase = 4;
+                buttonBObj.interactable = false;
+                break;
+
+            default:
+                return;
+        }
+
     }
 }
