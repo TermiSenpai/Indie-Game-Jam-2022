@@ -22,7 +22,6 @@ public class UpgradeFood : MonoBehaviour
             UI.internalScrap += valuePerUpgrade * quantityUpgrade;
             UI.UpdateUI();
         }
-
     }
 
 }

@@ -19,6 +19,13 @@ public class GameVictoryManager : MonoBehaviour
     [SerializeField] private GameObject goodEnding;
     [SerializeField] private GameObject specialEnding;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource endingAudioPlayer;
+    [SerializeField] private AudioSource soundtrackAudioPlayer;
+    [SerializeField] private AudioClip badEndingClip;
+    [SerializeField] private AudioClip goodEndingClip;
+    [SerializeField] private AudioClip specialEndingClip;
+
     private int i;
 
     // Update is called once per frame
@@ -29,14 +36,18 @@ public class GameVictoryManager : MonoBehaviour
             switch (upgradeController.quantityUpgrade)
             {
                 case <= 7:
+
                     badEnding.SetActive(true);
+                    playEndingSound(badEndingClip);
                     debug("lose");
                     break;
                 case 8:
                     goodEnding.SetActive(true);
+                    playEndingSound(goodEndingClip);
                     debug("win");
                     break;
                 case >= 9:
+                    playEndingSound(specialEndingClip);
                     specialEnding.SetActive(true);
                     debug("animal");
                     break;
@@ -53,5 +64,11 @@ public class GameVictoryManager : MonoBehaviour
     {
         i++;
         Debug.Log(txt);
+    }
+
+    private void playEndingSound(AudioClip clip)
+    {
+        soundtrackAudioPlayer.Stop();
+        endingAudioPlayer.PlayOneShot(clip);
     }
 }
