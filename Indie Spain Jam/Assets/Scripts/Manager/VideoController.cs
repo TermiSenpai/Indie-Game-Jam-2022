@@ -31,7 +31,6 @@ public class VideoController : MonoBehaviour
         logo.SetActive(true);
         Invoke("blackScreenOff", time);
         Invoke("FinishVideo", 6);
-        Invoke("changeScene", timeToChangeScene);
         video.Play();
     }
 
@@ -45,7 +44,7 @@ public class VideoController : MonoBehaviour
         VideoObj.SetActive(false);
     }
 
-    private void changeScene()
+    public void changeScene()
     {
         sceneControl.StartPlaying("GameplayScene");
     }
