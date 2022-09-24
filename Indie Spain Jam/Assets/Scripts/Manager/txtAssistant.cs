@@ -13,6 +13,6 @@ public class txtAssistant : MonoBehaviour
 
     private void Start()
     {
-        txtManager.AddWriter(txt, writeTxt[0], 0.1f);
+       // txtManager.AddWriter(txt, writeTxt[0], 0.1f);
     }
 }
