@@ -60,6 +60,11 @@ public class GameVictoryManager : MonoBehaviour
         }
     }
 
+    public void SpecialVictory()
+    {
+        timerController.MusicTimer = 1.0f;   
+    }
+
     private void debug(string txt)
     {
         i++;

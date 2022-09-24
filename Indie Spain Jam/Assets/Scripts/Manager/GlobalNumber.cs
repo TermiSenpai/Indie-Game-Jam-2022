@@ -26,6 +26,7 @@ public class GlobalNumber : MonoBehaviour
     [SerializeField] private SpaceShipAnimController animController;
     [SerializeField] private ButtonAudioController buttonB;
     [SerializeField] private Button buttonBObj;
+    [SerializeField] GameVictoryManager victoryManager;
 
 
     private void Start()
@@ -69,6 +70,7 @@ public class GlobalNumber : MonoBehaviour
                 costText.gameObject.SetActive(false); 
                 break;
             case 9:
+                victoryManager.SpecialVictory();
                 fase = 4;
                 buttonBObj.interactable = false;
                 break;

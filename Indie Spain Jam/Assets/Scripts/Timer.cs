@@ -5,7 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [Tooltip("Tiempo que dura la canción en segundos")]
-    [SerializeField] private float MusicTimer;
+    [SerializeField] public float MusicTimer;
 
     public bool canGetScrap { get; private set; }
 
