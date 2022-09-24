@@ -23,7 +23,7 @@ public class txtAssistant : MonoBehaviour
         //TextoMejoras.text = "Arriba chuta la victoria es tuya";
     }
 
-    void MejoraMedicina()
+    void MejoraMaquina()
     {
         
         txtManager.AddWriter(TextoMejoras, writeTxt[0], 0.1f);
