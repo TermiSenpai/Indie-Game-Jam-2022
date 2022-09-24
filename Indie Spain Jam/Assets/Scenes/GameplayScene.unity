@@ -1470,9 +1470,11 @@ GameObject:
   m_Component:
   - component: {fileID: 754134023}
   - component: {fileID: 754134024}
+  - component: {fileID: 754134029}
   - component: {fileID: 754134025}
   - component: {fileID: 754134027}
   - component: {fileID: 754134026}
+  - component: {fileID: 754134028}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1572,6 +1574,35 @@ MonoBehaviour:
   buttonB: {fileID: 1929231317}
   buttonBObj: {fileID: 1929231314}
   victoryManager: {fileID: 754134025}
+--- !u!114 &754134028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754134022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1f36cfde086e148ac640fcaa82b32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtManager: {fileID: 0}
+  writeTxt:
+  - 
+  - 
+  txt: {fileID: 0}
+--- !u!114 &754134029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754134022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ae2add5cce8f842a5392d55a6ca81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784353826
 GameObject:
   m_ObjectHideFlags: 0
