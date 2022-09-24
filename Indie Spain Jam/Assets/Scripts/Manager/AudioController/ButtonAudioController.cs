@@ -16,4 +16,9 @@ public class ButtonAudioController : MonoBehaviour
     {
         buttonSound.PlayOneShot(clip);
     }
+
+    public void playDelaySound(float delay)
+    {
+        buttonSound.PlayDelayed(delay);
+    }
 }
