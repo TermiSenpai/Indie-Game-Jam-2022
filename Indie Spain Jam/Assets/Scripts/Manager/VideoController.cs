@@ -15,9 +15,14 @@ public class VideoController : MonoBehaviour
     [SerializeField] private SceneControl sceneControl;
     [SerializeField] private float timeToChangeScene;
 
+    private int pulse;
+
 
     public void videoStart()
     {
+        if (pulse != 0)
+            sceneControl.ApagarConsola("INTRO");
+        pulse++;
         logo.SetActive(true);
         Invoke("blackScreenOff", time);
         Invoke("FinishVideo", 6);
