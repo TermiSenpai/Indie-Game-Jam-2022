@@ -14,4 +14,9 @@ public class SceneControl : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void recordScene()
+    {
+        SceneManager.LoadScene("PointsScene");
+    }
 }

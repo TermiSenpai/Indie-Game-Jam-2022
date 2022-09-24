@@ -19,6 +19,7 @@ public class GlobalNumber : MonoBehaviour
     [Range(0f, 1f)]
     public float upgradePercentaje;
     public int fase = 1;
+    public float totalScrap;
 
     [Header("References")]
     public UpgradeFood upgrade;
@@ -36,7 +37,10 @@ public class GlobalNumber : MonoBehaviour
     public void Contador()
     {
         if (gameplayTimer.canGetScrap)
+        {
             internalScrap += 1;
+            totalScrap++;
+        }
         UpdateUI();
     }
 
