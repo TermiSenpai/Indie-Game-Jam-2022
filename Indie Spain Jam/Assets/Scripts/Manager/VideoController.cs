@@ -13,7 +13,6 @@ public class VideoController : MonoBehaviour
     [SerializeField] private float time;
 
     [SerializeField] private SceneControl sceneControl;
-    [SerializeField] private float timeToChangeScene;
 
     private int pulse;
 
