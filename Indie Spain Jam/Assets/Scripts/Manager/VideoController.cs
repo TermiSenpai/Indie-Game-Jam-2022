@@ -45,7 +45,8 @@ public class VideoController : MonoBehaviour
 
     public void changeScene()
     {
-        sceneControl.StartPlaying("GameplayScene");
+        if (pulse != 0)
+            sceneControl.StartPlaying("GameplayScene");
     }
 
 
