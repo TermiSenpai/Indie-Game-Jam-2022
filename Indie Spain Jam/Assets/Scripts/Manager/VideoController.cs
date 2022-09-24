@@ -18,6 +18,11 @@ public class VideoController : MonoBehaviour
     private int pulse;
 
 
+    private void Start()
+    {
+        logo.SetActive(false);
+    }
+
     public void videoStart()
     {
         if (pulse != 0)
