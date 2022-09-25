@@ -30,6 +30,9 @@ public class GameVictoryManager : MonoBehaviour
     [Header("animator")]
     [SerializeField] private Animator fundido;
 
+    [Header("GameObjects")]
+    [SerializeField] private GameObject txtContainter;
+
     private int i;
 
     // Update is called once per frame
@@ -67,8 +70,9 @@ public class GameVictoryManager : MonoBehaviour
 
             ScrapController.costText.gameObject.SetActive(false);
             ScrapController.scrapDisplay.gameObject.SetActive(false);
-            Invoke("startBlackScreen", 4f);
-            Invoke("changeScene", 10);
+            txtContainter.SetActive(false);
+            Invoke("startBlackScreen", 10f);
+            Invoke("changeScene", 15);
         }
     }
 

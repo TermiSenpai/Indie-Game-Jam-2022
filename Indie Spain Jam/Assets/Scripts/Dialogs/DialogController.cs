@@ -50,28 +50,6 @@ public class DialogController : MonoBehaviour
                 if (upgrade.quantityUpgrade < 9)
                     activeTxt();
                 break;
-            //case 2:
-            //    activeTxt();
-            //    break;
-            //case 3:
-            //    activeTxt();
-            //    break;
-            //case 4:
-            //    activeTxt();
-            //    break;
-            //case 5:
-            //    activeTxt();
-            //    break;
-            //case 6:
-            //    activeTxt();
-            //    break;
-            //case 7:
-            //    activeTxt();
-            //    break;
-            //case 8:
-            //    activeTxt();
-            //    break;
-
 
             default:
                 Debug.Log("algo salió mal");
