@@ -43,7 +43,10 @@ public class DialogController : MonoBehaviour
                 break;
             case >= 1:
                 if (upgrade.quantityUpgrade == 9)
+                {
                     gameObject.SetActive(false);
+                    return;
+                }
                 activeTxt();
                 break;
             //case 2:
