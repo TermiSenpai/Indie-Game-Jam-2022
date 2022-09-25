@@ -11,6 +11,6 @@ public class AmogusMove : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
-        transform.Rotate(Vector3.forward * rotationSpeed);
+        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 }
