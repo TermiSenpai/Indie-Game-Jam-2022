@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: bbab9b51c74924f498bb9ffa5ac67005
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Particulas_Humo_Alfa: {fileID: 2800000, guid: 57d0fe3667201494aab26e6a5ed1b29a, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

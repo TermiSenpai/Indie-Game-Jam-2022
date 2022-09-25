@@ -28,6 +28,7 @@ public class GlobalNumber : MonoBehaviour
     [SerializeField] private ButtonAudioController buttonB;
     [SerializeField] private Button buttonBObj;
     [SerializeField] GameVictoryManager victoryManager;
+    [SerializeField] private ParticleSystem FX;
 
 
     private void Start()
@@ -54,6 +55,8 @@ public class GlobalNumber : MonoBehaviour
     {
         if (internalScrap >= upgradeCost)
         {
+            if (upgrade.quantityUpgrade < 8)
+                FX.Play();
             buttonB.playSound();
             upgrade.quantityUpgrade++;
             internalScrap -= upgradeCost;
@@ -71,7 +74,7 @@ public class GlobalNumber : MonoBehaviour
             case 8:
                 fase = 3;
                 upgrade.valuePerUpgrade = fase;
-                costText.gameObject.SetActive(false); 
+                costText.gameObject.SetActive(false);
                 break;
             case 9:
                 victoryManager.SpecialVictory();
