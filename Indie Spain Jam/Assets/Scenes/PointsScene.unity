@@ -816,8 +816,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Chatarra total:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
-  m_sharedMaterial: {fileID: -4390046280443046495, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
+  m_sharedMaterial: {fileID: 1560341499891103940, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1785,8 +1785,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
-  m_sharedMaterial: {fileID: -4390046280443046495, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
+  m_sharedMaterial: {fileID: 1560341499891103940, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2200,10 +2200,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pulse [A] para reintentar
+  m_text: Pulsa [A] para reintentar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
-  m_sharedMaterial: {fileID: -4390046280443046495, guid: f36475da236b8c64483ce58e796f3ef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
+  m_sharedMaterial: {fileID: 1560341499891103940, guid: 4d0dd3a5e5dd27045ba9750d7dcf026d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

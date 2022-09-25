@@ -20,7 +20,7 @@ public class DialogController : MonoBehaviour
 
     private void Start()
     {
-        string txt = "A conseguir chatarra!";
+        string txt = "¡A conseguir chatarra señores!";
         canvasGroup = GetComponent<CanvasGroup>();
         txtManager.AddWriter(text, txt, speed);
         Invoke("toggleTxtBox", 3);
@@ -38,7 +38,7 @@ public class DialogController : MonoBehaviour
         switch (upgrade.quantityUpgrade)
         {
             case 0:
-                txtManager.AddWriter(text, "A conseguir chatarra!", speed);
+                txtManager.AddWriter(text, "¡A conseguir chatarra señores!", speed);
                 Invoke("toggleTxtBox", 3);
                 break;
             case >= 1:
