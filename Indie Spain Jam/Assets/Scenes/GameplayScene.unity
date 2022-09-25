@@ -1727,7 +1727,7 @@ MonoBehaviour:
   goodEndingClip: {fileID: 8300000, guid: 459fda804c626534ab89624568336db9, type: 3}
   specialEndingClip: {fileID: 8300000, guid: 6c8ac03d39adb1946ad5f4be46346ca4, type: 3}
   fundido: {fileID: 2019357857}
-  txtContainter: {fileID: 0}
+  txtContainter: {fileID: 951840178}
 --- !u!114 &754134026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,7 +2126,7 @@ MonoBehaviour:
   - Me pido ponerle nombres a los gatos.
   - Salte del comunicador Pedro.
   - Me llama la atencion uno que se llama Elantris.
-  - "Menos mal que est\xE1s ahi ayudandonos."
+  - Menos mal que estas ahi ayudandonos.
   - Pedro por favor suelta el arma de rayos.
   - Pero podriamos llegar aun mas lejos...
   - '-'
@@ -4553,7 +4553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonB: {fileID: 1929231314}
-  timer: 10
+  timer: 3
 --- !u!1 &1981139397
 GameObject:
   m_ObjectHideFlags: 0
