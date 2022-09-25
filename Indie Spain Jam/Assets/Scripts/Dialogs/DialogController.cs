@@ -23,26 +23,31 @@ public class DialogController : MonoBehaviour
         string txt = "Nos hace falta mucha chatarra...";
         canvasGroup = GetComponent<CanvasGroup>();
         txtManager.AddWriter(text, txt, speed);
-        Invoke("toggleTxtBox", 3);
+        Invoke("ToggleInvisibleTxt", timer);
     }
 
-    public void toggleTxtBox()
+    public void ToggleVisibleTxt()
     {
-        anim.SetBool("Visible", !anim.GetBool("Visible"));
+        CancelInvoke();
+        anim.SetBool("Visible", true);
+    }
+    public void ToggleInvisibleTxt()
+    {
+        anim.SetBool("Visible", false);
     }
 
     public void ScreenTxt()
     {
-        toggleTxtBox();
+        ToggleVisibleTxt();
 
         switch (upgrade.quantityUpgrade)
         {
             case 0:
                 txtManager.AddWriter(text, "Nos hace falta mucha chatarra...", speed);
-                Invoke("toggleTxtBox", 3);
+                Invoke("ToggleInvisibleTxt", 3);
                 break;
             case >= 1:
-                if (upgrade.quantityUpgrade == 9)
+                if (upgrade.quantityUpgrade >= 9)
                 {
                     gameObject.SetActive(false);
                     return;
@@ -73,6 +78,6 @@ public class DialogController : MonoBehaviour
     {
         txtManager.AddWriter(text, random[upgrade.quantityUpgrade - 1], speed);
 
-        Invoke("toggleTxtBox", timer);
+        Invoke("ToggleInvisibleTxt", timer);
     }
 }

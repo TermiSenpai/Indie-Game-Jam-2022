@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c43b8a0ecb589bd4591ed5135e9876fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.04
   capitan:
   - Gracias a ti tenemos maquinitas nuevas.
   - Medicinas para cuidarnos un poquito que no nos da el sol...
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   txtManager: {fileID: 754134029}
   upgrade: {fileID: 754134026}
   anim: {fileID: 951840182}
-  timer: 5
+  timer: 4
 --- !u!225 &951840181
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4553,7 +4553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonB: {fileID: 1929231314}
-  timer: 3
+  timer: 0.5
 --- !u!1 &1981139397
 GameObject:
   m_ObjectHideFlags: 0
