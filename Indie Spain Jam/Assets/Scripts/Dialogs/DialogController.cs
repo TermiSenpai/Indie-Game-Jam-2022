@@ -47,7 +47,8 @@ public class DialogController : MonoBehaviour
                     gameObject.SetActive(false);
                     return;
                 }
-                activeTxt();
+                if (upgrade.quantityUpgrade < 9)
+                    activeTxt();
                 break;
             //case 2:
             //    activeTxt();
@@ -86,6 +87,7 @@ public class DialogController : MonoBehaviour
 
     private void capitanTxt()
     {
+
         txtManager.AddWriter(text, capitan[upgrade.quantityUpgrade - 1], speed);
     }
 
