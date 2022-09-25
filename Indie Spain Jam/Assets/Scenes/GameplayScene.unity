@@ -760,6 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 9f72bd3478c36014ab74e6c6d48fb79d, type: 3}
+  upgrade: {fileID: 0}
 --- !u!82 &156050167
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2436,6 +2437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 9f72bd3478c36014ab74e6c6d48fb79d, type: 3}
+  upgrade: {fileID: 0}
 --- !u!82 &987852900
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3413,14 +3415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 139397185}
     m_Modifications:
-    - target: {fileID: 689164261843237170, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 689164261843237170, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 783000004256084257, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3464,14 +3458,6 @@ PrefabInstance:
     - target: {fileID: 783000004256084257, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5729868589362900215, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5729868589362900215, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1607120743
       objectReference: {fileID: 0}
     - target: {fileID: 7328078412045210252, guid: cd459df05ffd00f48ac7a70ccdc938bb, type: 3}
       propertyPath: m_Name
@@ -3701,6 +3687,82 @@ MonoBehaviour:
   upgrade: {fileID: 0}
   upgradeValue: 0
   parameterName: Upgrade
+--- !u!1 &1501812401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1501812402}
+  - component: {fileID: 1501812404}
+  - component: {fileID: 1501812403}
+  m_Layer: 5
+  m_Name: Tetris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1501812402
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501812401}
+  m_LocalRotation: {x: 0, y: 0, z: 0.95024425, w: 0.31150588}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1887347910}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 143.7}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 915, y: -113}
+  m_SizeDelta: {x: 150, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1501812403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501812401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 550af3140e59cb140b90751f01f78e3b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1501812404
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501812401}
+  m_CullTransparentMesh: 1
 --- !u!1 &1610410237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4422,7 @@ RectTransform:
   - {fileID: 951840179}
   - {fileID: 1764660105}
   - {fileID: 1633275149}
+  - {fileID: 1501812402}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4611,9 +4674,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1929231319}
-        m_TargetAssemblyTypeName: ButtonDialogController, Assembly-CSharp
-        m_MethodName: upgradeTimer
+      - m_Target: {fileID: 1929231317}
+        m_TargetAssemblyTypeName: ButtonAudioController, Assembly-CSharp
+        m_MethodName: playUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4674,6 +4737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 8ed7cc2d77c30ca40b1760fe2da9ad61, type: 3}
+  upgrade: {fileID: 754134026}
 --- !u!82 &1929231318
 AudioSource:
   m_ObjectHideFlags: 0

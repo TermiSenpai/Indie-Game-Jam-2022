@@ -6,6 +6,7 @@ public class ButtonAudioController : MonoBehaviour
 {
     private AudioSource buttonSound;
     [SerializeField] private AudioClip clip;
+    [SerializeField] private UpgradeFood upgrade;
 
     private void Start()
     {
@@ -20,5 +21,11 @@ public class ButtonAudioController : MonoBehaviour
     public void playDelaySound(float delay)
     {
         buttonSound.PlayDelayed(delay);
+    }
+
+    public void playUpgradeSound()
+    {
+        if (upgrade.quantityUpgrade <= 7)
+            buttonSound.PlayOneShot(clip);
     }
 }
