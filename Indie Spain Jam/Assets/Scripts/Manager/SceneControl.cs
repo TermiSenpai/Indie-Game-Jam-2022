@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
+    public StartBtn startBtn;
+
     public void ApagarConsola(string scene)
     {
-        SceneManager.LoadScene(scene);
+        if (!startBtn.canExitGame)
+            SceneManager.LoadScene(scene);
+        else
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 
     public void StartPlaying(string scene)

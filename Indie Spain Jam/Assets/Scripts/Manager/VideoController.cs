@@ -13,6 +13,7 @@ public class VideoController : MonoBehaviour
     [SerializeField] private float time;
 
     [SerializeField] private SceneControl sceneControl;
+    [SerializeField] private StartBtn startBtn;
 
     private int pulse;
 
@@ -24,7 +25,7 @@ public class VideoController : MonoBehaviour
 
     public void videoStart()
     {
-        if (pulse != 0)
+        if (pulse != 0 || startBtn.canExitGame)
             sceneControl.ApagarConsola("INTRO");
         pulse++;
         logo.SetActive(true);
@@ -46,7 +47,7 @@ public class VideoController : MonoBehaviour
     public void changeScene()
     {
         if (pulse != 0)
-            sceneControl.StartPlaying("GameplayScene");
+            sceneControl.StartPlaying("IntroGameScene");
     }
 
 

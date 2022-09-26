@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PointsScene.unity
     guid: 253e9d5d7cce26b43b418ba1bff58fd5
+  - enabled: 1
+    path: Assets/Scenes/IntroGameScene.unity
+    guid: 0302e71feaf353d49bdb77c4fef61947
   m_configObjects: {}
