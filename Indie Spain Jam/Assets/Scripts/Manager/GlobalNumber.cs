@@ -57,7 +57,8 @@ public class GlobalNumber : MonoBehaviour
         {
             if (upgrade.quantityUpgrade < 8)
                 FX.Play();
-            buttonB.playSound();
+            if (upgrade.quantityUpgrade < 8)
+                buttonB.playSound();
             upgrade.quantityUpgrade++;
             internalScrap -= upgradeCost;
             upgradeCost += upgradeCost * upgradePercentaje;

@@ -14,6 +14,7 @@ public class GameVictoryManager : MonoBehaviour
     [SerializeField] private UpgradeFood upgradeController;
     [SerializeField] private GlobalNumber ScrapController;
     [SerializeField] private SceneControl scene;
+    [SerializeField] private EndingController ending;
 
     [Header("Endings")]
     [SerializeField] private GameObject badEnding;
@@ -43,23 +44,24 @@ public class GameVictoryManager : MonoBehaviour
             switch (upgradeController.quantityUpgrade)
             {
                 case <= 7:
-
                     badEnding.SetActive(true);
                     playEndingSound(badEndingClip);
                     debug("lose");
-                    PlayerPrefs.SetInt("final", 0);
+                    ending.showBadEnding();
                     break;
+
                 case 8:
                     goodEnding.SetActive(true);
                     playEndingSound(goodEndingClip);
                     debug("win");
-                    PlayerPrefs.SetInt("final", 1);
+                    ending.showGoodending();
                     break;
                 case >= 9:
+
                     playEndingSound(specialEndingClip);
                     specialEnding.SetActive(true);
                     debug("animal");
-                    PlayerPrefs.SetInt("final", 2);
+                    ending.showSpecialEnding();
                     break;
                 default:
                     throw new NotImplementedException();
@@ -72,7 +74,7 @@ public class GameVictoryManager : MonoBehaviour
             ScrapController.scrapDisplay.gameObject.SetActive(false);
             txtContainter.SetActive(false);
             Invoke("startBlackScreen", 10f);
-            Invoke("changeScene", 15);
+            Invoke("changeScene", 20);
         }
     }
 
