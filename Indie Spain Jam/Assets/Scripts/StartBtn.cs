@@ -35,7 +35,6 @@ public class StartBtn : MonoBehaviour
             }
             else
             {
-                if (playing[index])
                     audio.Play();
             }
             index++;

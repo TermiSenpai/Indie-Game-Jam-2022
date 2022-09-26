@@ -1962,7 +1962,7 @@ MonoBehaviour:
   txtComponent: {fileID: 1872022021}
   badEndTxt:
   - Para cuando nos dimos cuenta, era demasiado tarde
-  - Los jijones destruyeron el planeta ante nosotros
+  - Los Jijones destruyeron el planeta ante nosotros
   - "Si hubieramos conseguido completar la nave... quiz\xE1s..."
   goodEndTxt:
   - Conseguimos mejorar la nave lo suficiente
