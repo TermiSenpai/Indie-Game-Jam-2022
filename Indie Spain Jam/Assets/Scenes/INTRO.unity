@@ -551,6 +551,7 @@ GameObject:
   - component: {fileID: 460681445}
   - component: {fileID: 460681444}
   - component: {fileID: 460681447}
+  - component: {fileID: 460681448}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -626,6 +627,20 @@ MonoBehaviour:
   time: 0.3
   sceneControl: {fileID: 1525976750}
   startBtn: {fileID: 1525976752}
+  pulse: 0
+--- !u!114 &460681448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460681443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149907b698b39bb4ebbdc76c1563ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24300002, guid: b2be3e349c2be8241a28e78ec20e7cb6, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,11 +1958,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pulsa [POWER] Para cerrar el juego
+  m_text: 'Pulsa [POWER] Para cerrar el juego con el menu actual abierto
 
 
-    Pulsa [START] para cerrar el
-    menu
+    Pulsa
+    [START] para cerrar el menu
 
 '
   m_isRightToLeft: 0
@@ -2843,6 +2858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorial: {fileID: 1789831604}
+  videoController: {fileID: 460681447}
 --- !u!1 &1969893892
 GameObject:
   m_ObjectHideFlags: 0

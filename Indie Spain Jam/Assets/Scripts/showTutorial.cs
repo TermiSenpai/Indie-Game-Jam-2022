@@ -5,9 +5,12 @@ using UnityEngine;
 public class showTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject tutorial;
+    [SerializeField]
+    VideoController videoController;
 
     public void toggleTutorial()
     {
-        tutorial.SetActive(!tutorial.activeInHierarchy);
+        if (videoController.pulse != 0)
+            tutorial.SetActive(!tutorial.activeInHierarchy);
     }
 }

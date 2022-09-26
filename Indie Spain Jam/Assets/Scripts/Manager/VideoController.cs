@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class VideoController : MonoBehaviour
 {
 
-    [SerializeField] private VideoPlayer video;
+    [SerializeField] public VideoPlayer video;
     [SerializeField] private GameObject VideoObj;
     [SerializeField] private GameObject blackScreen;
     [SerializeField] private GameObject logo;
@@ -15,7 +15,7 @@ public class VideoController : MonoBehaviour
     [SerializeField] private SceneControl sceneControl;
     [SerializeField] private StartBtn startBtn;
 
-    private int pulse;
+    public int pulse;
 
 
     private void Start()
@@ -32,6 +32,15 @@ public class VideoController : MonoBehaviour
         Invoke("blackScreenOff", time);
         Invoke("FinishVideo", 6);
         video.Play();
+    }
+
+    private void Update()
+    {
+        //if (video.isPlaying && startBtn.canExitGame)        
+        //    video.Pause();
+        
+        //else
+        //    video.Play();
     }
 
     private void blackScreenOff()

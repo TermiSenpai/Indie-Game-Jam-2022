@@ -1410,11 +1410,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pulsa [POWER] Para cerrar el juego
+  m_text: 'Pulsa [POWER] Para cerrar el juego con el menu actual abierto
 
 
-    Pulsa [START] para cerrar el
-    menu
+    Pulsa
+    [START] para cerrar el menu
 
 '
   m_isRightToLeft: 0
